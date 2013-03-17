@@ -1,12 +1,18 @@
+"""
+Interactive Matplotlib Color Selector
+
+Written by Jake Vanderplas <jakevdp@cs.washington.edu>
+"""
+
+
 import numpy as np
 from matplotlib import pyplot as plt
-from matplotlib.widgets import Slider
+from matplotlib.widgets import Slider, AxesWidget
 from matplotlib.colors import rgb2hex
 
 im_arr = np.zeros((256, 256, 3), dtype=np.float32)
 im_arr[:, :, 0] = np.linspace(0, 1, 256)
 im_arr[:, :, 1] = np.linspace(0, 1, 256)[:, np.newaxis]
-im_arr[:, :, 2] = 0.0
 
 fig = plt.figure(figsize=(8, 8))
 main_ax = plt.axes([0.1, 0.15, 0.8, 0.8], xticks=[], yticks=[])
@@ -28,12 +34,10 @@ def update(val):
 def on_pick(event):
     r = event.mouseevent.xdata
     g = event.mouseevent.ydata
-
-    if (r > 0 and r < 1 and g > 0 and g < 1):
-        b = slider.val
-        cbox_im.set_data([[[r, 1 - g, b]]])
-        cbox_txt.set_text(rgb2hex((r, g, b)).upper())
-        fig.canvas.draw()
+    b = slider.val
+    cbox_im.set_data([[[r, 1 - g, b]]])
+    cbox_txt.set_text(rgb2hex((r, g, b)).upper())
+    fig.canvas.draw()
     
 
 slider.on_changed(update)
