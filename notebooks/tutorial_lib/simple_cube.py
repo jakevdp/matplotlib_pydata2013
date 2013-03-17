@@ -49,7 +49,8 @@ class Cube(object):
     def add_to_ax(self, ax):
         for poly in self.polys:
             ax.add_patch(poly)
-
+        ax.set_xlim(-3, 3)
+        ax.set_ylim(-3, 3)
 
 if __name__ == '__main__':
     fig, ax = plt.subplots(figsize=(6, 6),
