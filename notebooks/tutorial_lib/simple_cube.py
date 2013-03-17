@@ -46,6 +46,10 @@ class Cube(object):
             self.polys[i].set_xy(xy[i])
             self.polys[i].set_zorder(zorder[i])
 
+    def set_view(self, view):
+        self.view = view
+        self.rotate(self.z, 0)
+
     def add_to_ax(self, ax):
         for poly in self.polys:
             ax.add_patch(poly)
