@@ -8,7 +8,7 @@ ax.set_xlim(-10, 10)
 ax.set_ylim(-10, 10)
 
 
-def on_change(val):
+def zoom(val):
     c.set_view((0, 0, val))
     ax.set_xlim(-val, val)
     ax.set_ylim(-val, val)
@@ -16,7 +16,7 @@ def on_change(val):
     
 slider_ax = fig.add_axes((0.2, 0.05, 0.6, 0.02))
 slider = Slider(slider_ax, "perspective", 1, 20, valinit=10, color='#AAAAAA')
-slider.on_changed(on_change)
+slider.on_changed(zoom)
 
 
 def button_press(event):
