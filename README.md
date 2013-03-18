@@ -42,11 +42,11 @@ Notebook Static Views
 
 - [Introduction](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/01_Introduction.ipynb)
 
-- [Interactivity with Key Bindings](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/02_Key_Bindings.ipynb
+- [Interactivity with Key Bindings](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/02_Key_Bindings.ipynb)
 
-- [Interactivity with Widgets](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/03_Widgets.ipynb
+- [Interactivity with Widgets](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/03_Widgets.ipynb)
 
-- [Example: Building a Color Picker](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/04_Color_Picker.ipynb
+- [Example: Building a Color Picker](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/04_Color_Picker.ipynb)
 
 - [Animations in Matplotlib](http://nbviewer.ipython.org/urls/raw.github.com/jakevdp/matplotlib_pydata2013/master/notebooks/05_Animations.ipynb)
 
